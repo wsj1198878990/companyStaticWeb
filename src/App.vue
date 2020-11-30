@@ -1,32 +1,34 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+    <index/>
+    <swiper/>
+    <keep-alive include="Home">
+      <router-view/>
+    </keep-alive>
+    <bottom/>
   </div>
 </template>
 
+<script>
+  import index from "@/views/home/index";
+  import Swiper from "@/views/home/Swiper";
+  import Bottom from "@/components/common/bottom/Bottom";
+  export default {
+    name: "App",
+    components:{
+      index,
+      Swiper,
+      Bottom
+    }
+  }
+</script>
+
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-#nav {
-  padding: 30px;
-}
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
+  html, body {
+    position: relative;
+    margin:0;
+    padding:0;
+    width: 100%;
+    min-width:1200px
+  }
 </style>
