@@ -3,7 +3,6 @@
     <div class="index">
       <div class="logo">
         <img src="~@/assets/logo.png" alt="">
-        <p>北京雅明照明科技有限公司</p>
       </div>
       <div class="nav-box">
         <span v-for="item in nav" :key="item.name"
@@ -72,8 +71,7 @@
     align-items: center;
   }
   .logo img{
-    height: 60px;
-    width: 60px;
+    width: 100%;
     margin-right: 10px;
   }
   .nav-box{

@@ -8,25 +8,25 @@
         </div>
         <div class="mes">
           <div>
-            <p><i class="el-icon-house"></i>北京雅明照明科技有限公司</p>
+            <p><i class="el-icon-house"></i>酷车小镇</p>
           </div>
           <div>
             <p><i class="el-icon-mobile"></i>13260331611（刘先生）、13901787976（占先生）</p>
           </div>
           <div>
-            <p><i class="el-icon-phone-outline"></i>010-80887734</p>
+            <p><i class="el-icon-phone-outline"></i>+8610 67201113/67379070</p>
           </div>
           <div>
-            <p><i class="el-icon-location-information"></i>北京市通州区愉景苑7号楼二单元101</p>
+            <p><i class="el-icon-location-information"></i>北京市朝阳区金蝉西路甲1号</p>
           </div>
         </div>
       </div>
       <div id="map" style="width:1200px;height:389px;">
 
       </div>
-      <div class="tag">
-        <span>本公司已入驻中国政府采购网<i class="el-icon-s-flag"></i></span>
-      </div>
+<!--      <div class="tag">-->
+<!--        <span>本公司已入驻中国政府采购网<i class="el-icon-s-flag"></i></span>-->
+<!--      </div>-->
     </div>
   </div>
 </template>
@@ -40,7 +40,7 @@
     },
     mounted(){
       let map = new BMap.Map("map");
-      let point = new BMap.Point(116.646512, 39.941823);
+      let point = new BMap.Point(116.509819,39.87763);
       map.centerAndZoom(point, 15);
       map.addControl(new BMap.NavigationControl());//添加控件
       map.addControl(new BMap.ScaleControl());

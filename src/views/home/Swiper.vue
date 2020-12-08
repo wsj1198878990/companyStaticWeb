@@ -16,15 +16,15 @@
       return{
         swiper:[
           {
-            img: require('@/assets/swiper/swiper1.png'),
+            img: require('@/assets/swiper/swiper1.jpg'),
             href:''
           },
           {
-            img: require('@/assets/swiper/swiper2.png'),
+            img: require('@/assets/swiper/swiper2.jpg'),
             href:''
           },
           {
-            img: require('@/assets/swiper/swiper3.png'),
+            img: require('@/assets/swiper/swiper3.jpg'),
             href:''
           }
         ]
