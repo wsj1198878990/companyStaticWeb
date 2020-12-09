@@ -33,3 +33,10 @@ let projects=[
     id:106
   },
 ]
+let activities = [
+  {
+    image:require('@/assets/project/project1.jpg'),
+    name:'酷车小镇物业组织消防演习',
+    id:101
+  },
+]

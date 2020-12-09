@@ -2,7 +2,7 @@
   <div class="Navbar">
     <div class="main">
       <i class="el-icon-caret-right"></i>
-      <p>产品分类</p>
+      <p>商家分类</p>
     </div>
     <div class="check" v-for="(item,index) in items" :key="index" @click="itemClick(item)">
       <div class="item" :class="{active:currentType===item}">
@@ -22,7 +22,7 @@
     },
     data(){
       return{
-        items:['教育照明','户外照明','工业照明']
+        items:['餐饮美食','汽车改装','酒店住宿']
       }
     },
     methods:{

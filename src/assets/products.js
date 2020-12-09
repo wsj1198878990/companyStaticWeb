@@ -2,7 +2,8 @@ export {
   eduProducts,
   lanProducts,
   indProducts,
-  prodDetails
+  prodDetails,
+    car
 }
 
 let eduProducts=[
@@ -176,5 +177,38 @@ let prodDetails = [
   {
     image:require('@/assets/product/detail/18.1.jpg'),
     id:18
+  },
+]
+
+let car = [
+  {
+    image:require('@/assets/store/car/car1-cover.jpg'),
+    name:'北京金海筑业科技有限公司',
+    id:1
+  },
+  {
+    image:require('@/assets/store/car/car2-cover.jpg'),
+    name:'北京卡奇亚汽车用品销售有限公司',
+    id:2
+  },
+  {
+    image:require('@/assets/store/car/car3-cover.jpg'),
+    name:'北京德奥通汽车技术有限公司',
+    id:3
+  },
+  {
+    image:require('@/assets/store/car/car4-cover.jpg'),
+    name:'奥普泰克汽车服务（北京）有限公司',
+    id:4
+  },
+  {
+    image:require('@/assets/store/car/car5-cover.jpg'),
+    name:'北京车迷之家商贸中心',
+    id:5
+  },
+  {
+    image:require('@/assets/store/car/car6-cover.jpg'),
+    name:'骏佳北方摩托车销售服务有限公司',
+    id:6
   },
 ]

@@ -1,7 +1,7 @@
 <template>
   <div class="project">
     <div class="list">
-      <hight-light text="案例中心" bg-text="Case Center" :is-bg="true" class="title"/>
+      <hight-light text="活动展示" bg-text="Activities Display" :is-bg="true" class="title"/>
       <ProductList :projects="projects" img-height="260px"></ProductList>
     </div>
   </div>

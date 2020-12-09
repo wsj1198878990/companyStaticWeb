@@ -1,15 +1,15 @@
 <template>
   <div class="introduce" :class="{bgc:!isWhite}">
     <div class="content">
-      <div class="img" v-show="isLeft">
-        <img :src=img alt="">
+      <div class="img" v-show="isLeft" :class="{visible:!showImg}">
+        <img :src=img alt="" >
       </div>
       <div class="text">
         <strong>{{title}}</strong>
         <p>{{text}}</p>
       </div>
       <div class="img" v-show="!isLeft">
-        <img :src=img alt="">
+        <img :src=img alt="" :class="{visible:!showImg}">
       </div>
     </div>
   </div>
@@ -39,6 +39,12 @@
       },
       img:{
         type:String
+      },
+      showImg:{
+        type:Boolean,
+        default(){
+          return true
+        }
       }
     },
   }
@@ -48,7 +54,11 @@
   .bgc{
     background-color: #eeeeee;
   }
+  .visible{
+    visibility: hidden;
+  }
   .introduce{
+    color: #666666;
     display: flex;
     height: 549px;
     width: 100%;
@@ -57,7 +67,6 @@
   }
   .content{
     font-size: 14px;
-    color: #666666;
     width: 1200px;
     height: 100%;
     display: flex;
@@ -68,6 +77,7 @@
     width: 600px;
   }
   .img{
+
     margin-right: 50px;
   }
   strong{

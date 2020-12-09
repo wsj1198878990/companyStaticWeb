@@ -4,7 +4,7 @@
       <navbar :current-type="currentType" @itemClick="itemClick"/>
     </div>
     <div class="list">
-      <hight-light text="产品中心" bg-text="Product Center" :is-bg="true" id="title"/>
+      <hight-light text="商家展示" bg-text="Store Display" :is-bg="true" id="title"/>
       <div class="productList">
         <ProductList :projects="currentList" img-height="260px"></ProductList>
       </div>
@@ -16,7 +16,7 @@
   import HightLight from "@/components/common/hightLight/HightLight";
   import Navbar from "@/views/product/navbar/Navbar";
   import ProductList from "@/components/common/productList/ProductList";
-  import {eduProducts,lanProducts,indProducts} from "@/assets/products";
+  import {eduProducts,lanProducts,indProducts,car} from "@/assets/products";
 
   export default {
     name: "Product",
@@ -26,29 +26,29 @@
         eduProducts,
         lanProducts,
         indProducts,
+        car,
         currentType:'',
         currentList:null
       }
     },
     mounted(){
-      this.currentType='教育照明'
-      this.currentList=eduProducts
+      this.currentType='餐饮美食'
+      this.currentList=car
     },
     methods:{
       itemClick(item) {
         switch (item) {
-          case '教育照明':
+          case '餐饮美食':
             this.currentList = eduProducts;
-            this.currentType='教育照明';
-
+            this.currentType='餐饮美食';
             break;
-          case '户外照明':
+          case '汽车改装':
             this.currentList = lanProducts;
-            this.currentType='户外照明';
+            this.currentType='汽车改装';
             break;
-          case '工业照明':
+          case '酒店住宿':
             this.currentList = indProducts;
-            this.currentType='工业照明';
+            this.currentType='酒店住宿';
         }
       }
     }

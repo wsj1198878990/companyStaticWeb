@@ -50,6 +50,7 @@
     text-align: center;
   }
   .product-list-item{
+
     padding:15px;
   }
   .product-list-item img:hover{

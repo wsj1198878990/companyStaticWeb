@@ -45,7 +45,8 @@
     margin: 0;
     position: absolute;
     top: 50px;
-    left: 45%;
+    left: 50%;
+    transform: translateX(-50%);
     z-index: 999;
   }
   .content strong{
