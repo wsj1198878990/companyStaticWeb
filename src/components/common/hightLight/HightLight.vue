@@ -10,8 +10,12 @@
 </template>
 
 <script>
+import bread from "../../bread/bread";
   export default {
     name: "HightLight",
+    components:{
+      bread
+    },
     props:{
       text:{
         type:String
@@ -37,7 +41,7 @@
   }
   .content{
     position: relative;
-    width: 1200px;
+    width: 1100px;
     text-align: center;
   }
   .content p{

@@ -15,27 +15,51 @@ const routes = [
   },
   {
     path: '/home',
-    component:Home
+    component:Home,
+    name:'home',
+    meta:{
+      title:'首页'
+    }
   },
   {
     path: '/about',
-    component:About
+    component:About,
+    name:'about',
+    meta:{
+      title:'关于'
+    }
   },
   {
     path: '/contact',
-    component:Contact
+    component:Contact,
+    name:'contact',
+    meta:{
+      title:'联系我们'
+    }
   },
   {
     path: '/product',
-    component:Product
+    component:Product,
+    name:'product',
+    meta:{
+      title:'产品'
+    }
   },
   {
     path: '/project',
-    component:Project
+    component:Project,
+    name:'project',
+    meta:{
+      title:'项目'
+    }
   },
   {
     path: '/detail',
-    component:Detail
+    component:Detail,
+    name:'detail',
+    meta:{
+      title:'详细'
+    }
   },
 ]
 

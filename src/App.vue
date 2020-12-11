@@ -13,12 +13,14 @@
   import index from "@/views/home/index";
   import Swiper from "@/views/home/Swiper";
   import Bottom from "@/components/common/bottom/Bottom";
+  import bread from "./components/bread/bread";
   export default {
     name: "App",
     components:{
       index,
       Swiper,
-      Bottom
+      Bottom,
+      bread
     }
   }
 </script>
