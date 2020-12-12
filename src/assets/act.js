@@ -1,0 +1,35 @@
+export {
+  act
+}
+let act = [
+  {
+    image:require('@/assets/act/act4.webp'),
+    name:'活动案例',
+    id:101
+  },
+  {
+    image:require('@/assets/act/act4.webp'),
+    name:'活动案例',
+    di:102
+  },
+  {
+    image:require('@/assets/act/act4.webp'),
+    name:'活动案例',
+    id:103
+  },
+  {
+    image:require('@/assets/act/act4.webp'),
+    name:'活动案例',
+    id:103
+  },
+  {
+    image:require('@/assets/act/act4.webp'),
+    name:'活动案例',
+    id:103
+  },
+  {
+    image:require('@/assets/act/act4.webp'),
+    name:'活动案例',
+    id:103
+  },
+]

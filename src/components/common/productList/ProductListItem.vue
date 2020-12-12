@@ -39,8 +39,8 @@
 
 <style scoped>
   .product-list-item img{
-    width: auto;
-    height: auto;
+    width: 100%;
+    height: 100%;
     overflow: hidden;
     transition: all 0.6s;
     margin-bottom: 10px;
