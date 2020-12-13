@@ -39,15 +39,15 @@
       itemClick(item) {
         switch (item) {
           case '餐饮美食':
-            this.currentList = eduProducts;
+            //this.currentList = eduProducts;
             this.currentType='餐饮美食';
             break;
           case '汽车改装':
-            this.currentList = lanProducts;
+            //this.currentList = lanProducts;
             this.currentType='汽车改装';
             break;
           case '酒店住宿':
-            this.currentList = indProducts;
+            //this.currentList = indProducts;
             this.currentType='酒店住宿';
         }
       }

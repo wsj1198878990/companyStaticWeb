@@ -2,9 +2,18 @@
   <div class="detail">
     <div class="list">
       <hight-light :text="titleTest" :bg-text="titleTest" :is-bg="true"/>
-<!--      <img :src="image" alt="">-->
-      <introduce title="商家文案" :text="testText" :img="imageTest" :is-left="true" :is-white="true" :show-img="true"></introduce>
-      <introduce title="商家文案" :text="testText" :img="imageTest" :is-left="false" :is-white="true" :show-img="true"></introduce>
+<!--      <img :hfbdgsrc="image" alt="">-->
+      <introduce class="int" title="商家文案" :text="testText" :img="imageTest" :is-left="true" :is-white="true" :show-img="true"></introduce>
+      <introduce class="int" title="商家文案" :text="testText" :img="imageTest" :is-left="false" :is-white="true" :show-img="true"></introduce>
+      <introduce class="int" title="商家文案" :text="testText" :img="imageTest" :is-left="true" :is-white="true" :show-img="true"></introduce>
+      <div class="img-list">
+        <img src="@/assets/store/car/car1-cover.jpg" alt="">
+        <img src="@/assets/store/car/car1-cover.jpg" alt="">
+        <img src="@/assets/store/car/car1-cover.jpg" alt="">
+        <img src="@/assets/store/car/car1-cover.jpg" alt="">
+        <img src="@/assets/store/car/car1-cover.jpg" alt="">
+        <img src="@/assets/store/car/car1-cover.jpg" alt="">
+      </div>
      </div>
   </div>
 </template>
@@ -51,7 +60,7 @@
   }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
   .detail{
     display: flex;
     justify-content: center;
@@ -64,5 +73,22 @@
     padding-top: 30px;
     border-top: 1px solid #eeeeee;
     width: 75%;
+  }
+  .int{
+    margin-bottom: 15px;
+    height: 370px;
+    border-radius: 15px;
+    box-shadow:2px 2px 6px #9ea090;
+  }
+  .int >>> .content{
+    background-color: #bfa;
+  }
+  .img-list {
+    img{
+      height: 200px;
+      width: 200px;
+      padding: 0;
+    }
+    display: flex;
   }
 </style>
