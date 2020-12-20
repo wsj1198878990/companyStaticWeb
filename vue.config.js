@@ -23,5 +23,9 @@
 //   }
 // };
 module.exports={
-  publicPath:'./'
+  publicPath:'./',
+  devServer:{
+    hot:true,
+    host:''
+  }
 }
