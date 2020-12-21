@@ -7,6 +7,7 @@ import BaiduMap from 'vue-baidu-map';
 
 Vue.config.productionTip = false
 Vue.use(ElementUI);
+Vue.prototype.$bus = new Vue()
 Vue.use(BaiduMap,{
   ak:'6kw2pvn0h71KbPBhZFzL6uVGtfGnpQiI'
 });

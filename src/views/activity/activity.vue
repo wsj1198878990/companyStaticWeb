@@ -5,14 +5,20 @@
       <div class="title">
         <span>酷车闪购</span>
         <div class="btn">
-          <el-button size="mini" icon="el-icon-arrow-left"></el-button>
-          <el-button size="mini" icon="el-icon-arrow-right"></el-button>
+          <el-button @click="left" size="mini" icon="el-icon-arrow-left"></el-button>
+          <el-button @click="right" size="mini" icon="el-icon-arrow-right"></el-button>
         </div>
       </div>
-      <div class="list">
-        <card-list>
-
-        </card-list>
+      <div class="list" ref="list">
+        <card-special></card-special>
+        <card-special></card-special>
+        <card-special></card-special>
+        <card-special></card-special>
+        <card-special></card-special>
+        <card-special></card-special>
+        <card-special></card-special>
+        <card-special></card-special>
+        <card-special></card-special>
       </div>
     </div>
   </div>
@@ -20,12 +26,20 @@
 
 <script>
 import HightLight from "@/components/common/hightLight/HightLight";
-import CardList from "../../components/activityList/cardList";
+import cardSpecial from "@/components/activityList/cardSpecial";
 export default {
   name: "activity",
   components:{
-    CardList,
-    HightLight
+    HightLight,
+    cardSpecial
+  },
+  methods:{
+    right(){
+      // console.log(this.$refs.  )
+    },
+    left(){
+
+    }
   }
 }
 </script>
@@ -36,6 +50,7 @@ export default {
   margin: 0 auto;
   .main{
     background-color: #f5f5f5;
+    overflow-x: hidden;
     .title{
       display: flex;
       justify-content: space-between;
@@ -50,6 +65,11 @@ export default {
           margin: 0;
         }
       }
+    }
+    .list{
+      position: relative;
+      display: flex;
+      margin-right: 14px;
     }
   }
 }

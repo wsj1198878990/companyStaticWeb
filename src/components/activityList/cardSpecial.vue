@@ -22,5 +22,7 @@ name: "cardSpecial"
 <style scoped lang="scss">
 .cardSpecial{
   width: 234px;
+  cursor:pointer;
+  margin-right: 14px;
 }
 </style>
