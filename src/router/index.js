@@ -6,6 +6,7 @@ const Contact = ()=>import('@/components/contact/Contact');
 const Product = ()=>import('@/components/product/Product');
 const Project = ()=>import('@/components/project/Project');
 const Detail = ()=>import('@/components/detail/Detail');
+const activity =()=>import('@/views/activity/activity.vue')
 Vue.use(VueRouter)
 
 const routes = [
@@ -61,6 +62,14 @@ const routes = [
       title:'详细'
     }
   },
+  {
+    path: '/activity',
+    component:activity,
+    name:'activity',
+    meta:{
+      title:'活动'
+    }
+  }
 ]
 
 const router = new VueRouter({
