@@ -2,6 +2,7 @@
   <div>
     <product class="product"/>
     <about class="about"/>
+    <activity/>
     <project/>
     <Contact/>
   </div>
@@ -10,11 +11,12 @@
 <script>
   import Product from "@/components/product/Product";
   import About from "@/components/about/About";
+  import activity from "@/views/activity/activity";
   import Project from "@/components/project/Project";
   import Contact from "@/components/contact/Contact";
   export default {
     name: "Home",
-    components: {Contact, Project, About, Product},
+    components: {Contact, Project, About, Product,activity},
   }
 </script>
 

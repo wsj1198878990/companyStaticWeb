@@ -1,12 +1,12 @@
 <template>
   <div class="cardSpecial">
     <el-card :body-style="{ padding: '0px' }" shadow="hover">
-      <img src="https://shadow.elemecdn.com/app/element/hamburger.9cf7b091-55e9-11e9-a976-7f4d0b07eef6.png" class="image">
+      <img src="https://shadow.elemecdn.com/app/element/hamburger.9cf7b091-55e9-11e9-a976-7f4d0b07eef6.png"
+           class="image">
       <div style="padding: 14px;">
-        <span>好吃的汉堡</span>
+        <span>活动案例</span>
         <div class="bottom clearfix">
-          <time class="time">2021-1-1</time>
-          <el-button type="text" class="button">操作按钮</el-button>
+          <time class="time">{{ nowDate }}</time>
         </div>
       </div>
     </el-card>
@@ -15,14 +15,28 @@
 
 <script>
 export default {
-name: "cardSpecial"
+  name: "cardSpecial",
+  created() {
+
+
+  },
+  data(){
+    return{
+      date:''
+    }
+  },
+  computed:{
+    nowDate(){
+      return new Date().Format("yyyy-MM-dd")
+    }
+  }
 }
 </script>
 
 <style scoped lang="scss">
-.cardSpecial{
+.cardSpecial {
   width: 234px;
-  cursor:pointer;
+  cursor: pointer;
   margin-right: 14px;
 }
 </style>
