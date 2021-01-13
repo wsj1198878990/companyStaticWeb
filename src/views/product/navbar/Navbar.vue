@@ -1,12 +1,11 @@
 <template>
   <div class="Navbar">
     <div class="main">
-      <i class="el-icon-caret-right"></i>
-      <p>商家分类</p>
+      <p>分类</p>
     </div>
     <div class="check" v-for="(item,index) in items" :key="index" @click="itemClick(item)">
       <div class="item" :class="{active:currentType===item}">
-        <p>{{item}}</p>
+        {{item}}
       </div>
     </div>
   </div>
@@ -22,7 +21,7 @@
     },
     data(){
       return{
-        items:['餐饮美食','汽车改装','酒店住宿']
+        items:['美食','改装','住宿']
       }
     },
     methods:{
@@ -34,14 +33,23 @@
 </script>
 
 <style scoped>
+  @media screen and (min-width: 1400px){
+    .Navbar{
+      width: 100px !important;
+    }
+    .item{
+      width: 100px !important;
+    }
+  }
   .Navbar{
-    width: 200px;
+    width: 50px;
     border: 1px solid #dfdfdf;
   }
   .main{
     background-color: #3a8ee6;
     color: #FFFFFF;
     display: flex;
+    justify-content: center;
     align-items: center;
     font-size: 14px;
     font-weight: bold;
@@ -54,13 +62,14 @@
   .item{
     color: #666666;
     display: flex;
+    justify-content: center;
     align-items: center;
     font-size: 14px;
     font-weight: normal;
     border-bottom:1px solid #dfdfdf;
-    padding-left: 34px;
-    width: 166px;
+    width: 50px;
     height: 50px;
+    text-align: center;
   }
   .check :hover{
     background-color: #3a8ee6;

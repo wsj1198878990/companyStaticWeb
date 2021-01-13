@@ -22,7 +22,7 @@
 
 <style scoped>
   .product{
-    height: 770px;
+    height: 780px;
     overflow: hidden;
   }
  .about{

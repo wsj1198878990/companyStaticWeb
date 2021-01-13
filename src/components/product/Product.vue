@@ -1,13 +1,13 @@
 <template>
   <div class="product">
-    <div class="nav">
-      <navbar :current-type="currentType" @itemClick="itemClick"/>
-    </div>
     <div class="list">
       <hight-light text="商家展示" bg-text="Store Display" :is-bg="true" id="title"/>
       <div class="productList">
         <ProductList :projects="currentList" img-height="260px"></ProductList>
       </div>
+    </div>
+    <div class="nav">
+      <navbar :current-type="currentType" @itemClick="itemClick"/>
     </div>
   </div>
 </template>
@@ -38,17 +38,17 @@
     methods:{
       itemClick(item) {
         switch (item) {
-          case '餐饮美食':
+          case '美食':
             //this.currentList = eduProducts;
-            this.currentType='餐饮美食';
+            this.currentType='美食';
             break;
-          case '汽车改装':
+          case '改装':
             //this.currentList = lanProducts;
-            this.currentType='汽车改装';
+            this.currentType='改装';
             break;
-          case '酒店住宿':
+          case '住宿':
             //this.currentList = indProducts;
-            this.currentType='酒店住宿';
+            this.currentType='住宿';
         }
       }
     }
@@ -58,10 +58,11 @@
 <style scoped>
   .product {
     display: flex;
-    justify-content: center;
+    position: relative;
   }
 
   .list {
+    margin: 0 auto;
     width: 1200px;
     text-align: center;
   }
@@ -71,12 +72,14 @@
   }
 
   .nav {
-    margin-top: 135px;
+    /*margin-top: 135px;*/
+    right: 0;
+    position: absolute;
+    top: 300px;
+
   }
   .productList{
     padding-left: 30px;
   }
-  #title{
-    padding-right: 210px;
-  }
+
 </style>
