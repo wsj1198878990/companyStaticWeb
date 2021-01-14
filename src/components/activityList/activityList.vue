@@ -9,15 +9,7 @@
         </div>
       </div>
       <div class="list" ref="list">
-        <card-special></card-special>
-        <card-special></card-special>
-        <card-special></card-special>
-        <card-special></card-special>
-        <card-special></card-special>
-        <card-special></card-special>
-        <card-special></card-special>
-        <card-special></card-special>
-        <card-special></card-special>
+        <card-special v-for="item in activityList" :name="item.name" :img-url="item.imgUrl"></card-special>
       </div>
       <div class="bottomImg">
         <img src="@/assets/bottomImg.webp" alt="">
@@ -37,6 +29,9 @@ export default {
       default(){
         return '酷车闪购'
       }
+    },
+    activityList: {
+      type:Array
     }
   },
   data() {
